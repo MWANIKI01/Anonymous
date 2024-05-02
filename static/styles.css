@@ -1,0 +1,42 @@
+
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ }
+
+ nav.navbar {
+ padding: 15px;
+ }
+
+ nav.navbar .navbar-brand {
+ font-size: 24px;
+ font-weight: bold;
+ }
+
+ nav.navbar .navbar-toggler:focus {
+ outline: none;
+ box-shadow: none;
+ }
+
+ nav.navbar .navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M27 48h256l22.6 22.6C176 118.3 150.1 171.3 131.1 203c-23.7 31.3-34.9 74.3-20.6 109.8l96.4 96.4c14.1 23.3 31.9 44.5 51.5 64.6l128 128c21.1 20.2 50.9 28.7 84 28.7H256l128-128c33-15.2 52.1-48.4 51.5-64.6L351.1 203c12.7-32.6 16.3-78.4 20.6-109.8L296.1 256l96.4-96.4c15.2-15.2 48.4-21.1 64.6-20.6z'/%3E%3C/svg%3E");
+ }
+
+ nav.navbar .form-control {
+ width: 100%;
+ padding: 10px;
+ }
+
+ nav.navbar textarea.form-control {
+ height: 150px;
+ }
+
+ nav.navbar button.btn-primary {
+ width: 100%;
+ padding: 10px;
+ background-color: #28a745;
+ border: none;
+ color: white;
+ cursor: pointer;
+ }

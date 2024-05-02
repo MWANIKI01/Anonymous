@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3xrVxUSBzTwVwsCJn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/styles.css">
+    <!-- Add custom CSS -->
+    <style>
+      .form-control {
+        margin-bottom: 1rem;
+      }
+
+      textarea.form-control {
+        height: 10rem;
+      }
+
+      .btn-send {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      .btn-send:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <title>Anonymous Email Sender</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <form action="/send" method="POST">
+        <div class="mb-3">
+          <label for="recipient-name" class="form-label">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="recipient-name"
+            name="name"
+            placeholder="Name: (Optional)"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="recipient-email" class="form-label"
+            >Recipient's Email:</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="recipient-email"
+            name="email"
+            placeholder="Email: (Required)"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subject"
+            name="subject"
+            placeholder="Subject:"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="10"
+            placeholder="Message:"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-send">Send Email</button>
+      </form>
+    </div>
+    <!-- Add Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt5bb6bwbizAdX39d3ApdF0B"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
